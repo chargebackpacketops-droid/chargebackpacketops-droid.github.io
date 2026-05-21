@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" fill="none">
+  <!-- Background matches V2 beige -->
+  <rect width="720" height="560" fill="#fcfcfc"/>
+  
+  <!-- Module 1: Case Analysis (Top Left) -->
+  <rect x="60" y="60" width="290" height="200" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="85" y="85" width="24" height="24" rx="4" fill="#3388ff"/>
+  <text x="118" y="103" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1a1a1a">Case Analysis</text>
+  <rect x="85" y="130" width="240" height="8" rx="2" fill="#f5f5f5"/>
+  <rect x="85" y="145" width="220" height="8" rx="2" fill="#f5f5f5"/>
+  <rect x="85" y="210" width="90" height="24" rx="4" fill="rgba(51, 136, 255, 0.1)"/>
+  <text x="100" y="226" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#3388ff">ORGANIZED</text>
+  
+  <!-- Module 2: Evidence Checklist (Top Right) -->
+  <rect x="370" y="60" width="290" height="200" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="395" y="103" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#1a1a1a">Evidence Gaps</text>
+  
+  <!-- Red Warning Items -->
+  <rect x="395" y="130" width="200" height="12" rx="2" fill="rgba(255, 107, 74, 0.1)"/>
+  <circle cx="615" cy="136" r="6" fill="#ff6b4a"/>
+  
+  <rect x="395" y="150" width="160" height="12" rx="2" fill="rgba(255, 107, 74, 0.05)"/>
+  <rect x="395" y="170" width="220" height="12" rx="2" fill="rgba(255, 107, 74, 0.05)"/>
+  
+  <!-- Module 3: Response Draft (Bottom Wide) -->
+  <rect x="60" y="280" width="600" height="220" rx="4" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="60" y="280" width="600" height="40" rx="4 4 0 0" fill="#1a1a1a"/>
+  <text x="85" y="306" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#ffffff">DRAFT RESPONSE_READY</text>
+  
+  <!-- Typing Effect Lines -->
+  <rect x="85" y="345" width="550" height="6" rx="2" fill="#f5f5f5"/>
+  <rect x="85" y="365" width="530" height="6" rx="2" fill="#f5f5f5"/>
+  <rect x="85" y="385" width="550" height="6" rx="2" fill="#f5f5f5"/>
+  <rect x="85" y="405" width="500" height="6" rx="2" fill="#f5f5f5"/>
+  <rect x="85" y="425" width="550" height="6" rx="2" fill="#f5f5f5"/>
+  
+  <!-- Bottom Actions -->
+  <rect x="85" y="455" width="100" height="28" rx="4" fill="#3388ff"/>
+  <text x="105" y="473" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#ffffff">REPLACE</text>
+  
+  <rect x="200" y="455" width="100" height="28" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="236" y="473" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#1a1a1a">EDIT</text>
+</svg>

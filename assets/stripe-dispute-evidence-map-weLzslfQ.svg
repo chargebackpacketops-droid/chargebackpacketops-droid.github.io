@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Stripe dispute evidence map</title>
+  <desc id="desc">A visual map showing Stripe dispute category, Dashboard deadline, proof groups, redaction check, and merchant review in Stripe.</desc>
+  <rect width="720" height="560" rx="28" fill="#f9f9f9"/>
+  <rect x="54" y="52" width="612" height="456" rx="24" fill="#ffffff" stroke="#d4d4d4" stroke-width="2"/>
+
+  <text x="86" y="104" fill="#171717" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Stripe dispute evidence</text>
+  <rect x="554" y="76" width="78" height="30" rx="15" fill="#635bff"/>
+  <text x="593" y="96" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Stripe</text>
+  <text x="86" y="134" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="14">Manual packet before Dashboard submit</text>
+
+  <rect x="86" y="170" width="220" height="112" rx="16" fill="#f4f4f4" stroke="#d4d4d4"/>
+  <text x="112" y="208" fill="#171717" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Dispute category</text>
+  <text x="112" y="236" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="13">Fraudulent, duplicate,</text>
+  <text x="112" y="256" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="13">product not received</text>
+
+  <rect x="86" y="318" width="220" height="104" rx="16" fill="#f4f4f4" stroke="#3388ff"/>
+  <text x="112" y="354" fill="#171717" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">Deadline check</text>
+  <text x="112" y="382" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="13">Final response reviewed</text>
+  <text x="112" y="402" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="13">before Stripe submit</text>
+
+  <path d="M318 226h54" stroke="#3388ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M362 214l14 12-14 12" fill="none" stroke="#3388ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M318 370h54" stroke="#3388ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M362 358l14 12-14 12" fill="none" stroke="#3388ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="392" y="150" width="240" height="260" rx="20" fill="#f9f9f9" stroke="#d4d4d4"/>
+
+  <circle cx="424" cy="202" r="13" fill="#ffffff" stroke="#3388ff" stroke-width="2"/>
+  <path d="M418 202l5 5 9-11" fill="none" stroke="#3388ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="454" y="196" fill="#171717" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Payment facts</text>
+  <text x="454" y="216" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="12">amount, customer, ID</text>
+
+  <circle cx="424" cy="260" r="13" fill="#ffffff" stroke="#3388ff" stroke-width="2"/>
+  <path d="M418 260l5 5 9-11" fill="none" stroke="#3388ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="454" y="254" fill="#171717" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Authorization</text>
+  <text x="454" y="274" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="12">AVS, CVC, 3DS</text>
+
+  <circle cx="424" cy="318" r="13" fill="#ffffff" stroke="#3388ff" stroke-width="2"/>
+  <path d="M418 318l5 5 9-11" fill="none" stroke="#3388ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="454" y="312" fill="#171717" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Fulfillment proof</text>
+  <text x="454" y="332" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="12">tracking, access, usage</text>
+
+  <circle cx="424" cy="376" r="13" fill="#ffffff" stroke="#3388ff" stroke-width="2"/>
+  <path d="M418 376l5 5 9-11" fill="none" stroke="#3388ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="454" y="370" fill="#171717" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">Refund timeline</text>
+  <text x="454" y="390" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="12">policy and messages</text>
+
+  <rect x="392" y="430" width="240" height="42" rx="21" fill="#171717"/>
+  <text x="512" y="456" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="middle">Merchant reviews in Stripe</text>
+</svg>

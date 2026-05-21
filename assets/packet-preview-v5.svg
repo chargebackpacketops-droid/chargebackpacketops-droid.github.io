@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" fill="none">
+  <!-- Pure White Background -->
+  <rect width="720" height="560" fill="#ffffff"/>
+  
+  <!-- Module 1: Case Analysis (Top Left - SCALED UP) -->
+  <rect x="20" y="20" width="330" height="230" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="45" y="45" width="24" height="24" rx="4" fill="#3388ff" opacity="0.1"/>
+  <rect x="51" y="51" width="12" height="12" rx="2" fill="#3388ff"/>
+  <text x="79" y="62" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#1a1a1a">Case Analysis</text>
+  
+  <rect x="45" y="90" width="280" height="10" rx="2" fill="#f5f5f5"/>
+  <rect x="45" y="110" width="250" height="10" rx="2" fill="#f5f5f5"/>
+  <rect x="45" y="130" width="220" height="10" rx="2" fill="#f5f5f5"/>
+  
+  <rect x="45" y="190" width="100" height="28" rx="4" fill="rgba(51, 136, 255, 0.1)"/>
+  <text x="60" y="208" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#3388ff">ORGANIZED</text>
+  
+  <!-- Module 2: Evidence Gaps (Top Right - SCALED UP) -->
+  <rect x="370" y="20" width="330" height="230" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="395" y="45" width="24" height="24" rx="4" fill="rgba(255, 107, 74, 0.1)"/>
+  <rect x="401" y="51" width="12" height="12" rx="2" fill="#ff6b4a"/>
+  <text x="429" y="62" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#1a1a1a">Evidence Gaps</text>
+  
+  <circle cx="405" cy="110" r="5" fill="#ff6b4a"/>
+  <rect x="425" y="105" width="240" height="10" rx="2" fill="rgba(255, 107, 74, 0.1)"/>
+  
+  <circle cx="405" cy="140" r="5" fill="#ff6b4a"/>
+  <rect x="425" y="135" width="200" height="10" rx="2" fill="rgba(255, 107, 74, 0.05)"/>
+  
+  <circle cx="405" cy="170" r="5" fill="#ff6b4a"/>
+  <rect x="425" y="165" width="220" height="10" rx="2" fill="rgba(255, 107, 74, 0.05)"/>
+  
+  <!-- Module 3: Response Draft (Bottom Wide - SCALED UP) -->
+  <rect x="20" y="270" width="680" height="270" rx="4" fill="#ffffff" stroke="#1a1a1a" stroke-width="2.5"/>
+  <path d="M20 274 Q 20 270 24 270 L 696 270 Q 700 270 700 274 L 700 330 L 20 330 Z" fill="#1a1a1a"/>
+  <text x="50" y="305" font-family="'Inter', sans-serif" font-size="16" font-weight="700" fill="#ffffff" letter-spacing="0.05em">DRAFT RESPONSE</text>
+  <rect x="610" y="288" width="80" height="24" rx="2" fill="#3388ff"/>
+  <text x="628" y="304" font-family="'Inter', sans-serif" font-size="10" font-weight="800" fill="#ffffff">READY</text>
+
+  <rect x="50" y="360" width="620" height="10" rx="2" fill="#f0f0f0"/>
+  <rect x="50" y="385" width="580" height="10" rx="2" fill="#f0f0f0"/>
+  <rect x="50" y="410" width="620" height="10" rx="2" fill="#f0f0f0"/>
+  <rect x="50" y="435" width="540" height="10" rx="2" fill="#f0f0f0"/>
+  
+  <rect x="50" y="480" width="140" height="40" rx="4" fill="#3388ff"/>
+  <text x="75" y="505" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff">DOWNLOAD</text>
+  
+  <rect x="210" y="480" width="120" height="40" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <text x="252" y="505" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#1a1a1a">EDIT</text>
+</svg>

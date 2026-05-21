@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" fill="none">
+  <!-- Core Background -->
+  <rect width="720" height="560" fill="#fcfcfc"/>
+  
+  <!-- Grid/Dots background accent -->
+  <circle cx="360" cy="280" r="180" fill="none" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4 4" />
+  <circle cx="360" cy="280" r="260" fill="none" stroke="#f0f0f0" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!-- The Process Lines (Animated-looking dashes) -->
+  <path d="M120 160 Q 240 160 360 280" stroke="#3388ff" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+  <path d="M120 400 Q 240 400 360 280" stroke="#ff6b4a" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+  <path d="M360 280 Q 480 280 600 220" stroke="#3388ff" stroke-width="2" fill="none"/>
+  <path d="M360 280 Q 480 280 600 340" stroke="#1a1a1a" stroke-width="2" fill="none"/>
+
+  <!-- Fragments on the Left -->
+  <!-- Evidence 1 -->
+  <rect x="60" y="130" width="140" height="60" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="80" y="150" width="80" height="6" rx="2" fill="#f0f0f0"/>
+  <circle cx="170" cy="160" r="12" fill="rgba(51, 136, 255, 0.1)"/>
+  <circle cx="170" cy="160" r="4" fill="#3388ff"/>
+  
+  <!-- Evidence 2 -->
+  <rect x="50" y="370" width="160" height="60" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1"/>
+  <rect x="70" y="390" width="100" height="6" rx="2" fill="#f0f0f0"/>
+  <circle cx="180" cy="400" r="12" fill="rgba(255, 107, 74, 0.1)"/>
+  <circle cx="180" cy="400" r="4" fill="#ff6b4a"/>
+
+  <!-- Core Packet Transform Box -->
+  <rect x="290" y="180" width="140" height="200" rx="6" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="300" y="190" width="120" height="180" rx="4" fill="#1a1a1a"/>
+  <!-- Inner core visualization -->
+  <rect x="320" y="220" width="80" height="4" rx="2" fill="#3388ff"/>
+  <rect x="320" y="240" width="80" height="4" rx="2" fill="#ffffff"/>
+  <rect x="320" y="260" width="60" height="4" rx="2" fill="#ffffff"/>
+  <circle cx="360" cy="310" r="24" fill="#3388ff" opacity="0.2"/>
+  <circle cx="360" cy="310" r="12" fill="#3388ff"/>
+
+  <!-- Output Nodes on the Right -->
+  <!-- Output 1 -->
+  <rect x="520" y="190" width="140" height="60" rx="4" fill="#ffffff" stroke="#e0e0e0" stroke-width="1.5"/>
+  <rect x="540" y="210" width="12" height="12" rx="2" fill="#3388ff"/>
+  <text x="560" y="221" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#1a1a1a">PDF EXPORT</text>
+  
+  <!-- Output 2 -->
+  <rect x="500" y="310" width="160" height="60" rx="4" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+  <path d="M523 340 L 533 350 L 548 330" stroke="#3388ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <text x="563" y="344" font-family="'Inter', sans-serif" font-size="11" font-weight="800" fill="#ffffff">HIGH WIN RATE</text>
+</svg>

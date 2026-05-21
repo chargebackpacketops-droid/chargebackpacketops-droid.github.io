@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">Chargeback checklist map</title>
+  <desc id="desc">A checklist-style visual showing the order, delivery, communication, refund, policy, and timeline evidence a merchant reviews before responding to a chargeback.</desc>
+  <rect width="720" height="560" rx="28" fill="#f9f9f9"/>
+  <rect x="68" y="48" width="584" height="464" rx="26" fill="#ffffff" stroke="#d4d4d4" stroke-width="2"/>
+  <text x="106" y="102" fill="#27241f" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Chargeback checklist</text>
+  <text x="106" y="132" fill="#666666" font-family="Inter, Arial, sans-serif" font-size="14">Evidence to collect before the deadline</text>
+  <g fill="#f4f4f4" stroke="#d4d4d4" stroke-width="1.5">
+    <circle cx="142" cy="186" r="16"/>
+    <circle cx="142" cy="242" r="16"/>
+    <circle cx="142" cy="298" r="16"/>
+    <circle cx="142" cy="354" r="16"/>
+    <circle cx="142" cy="410" r="16"/>
+  </g>
+  <g fill="none" stroke="#3388ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M134 185l6 6 11-14"/>
+    <path d="M134 241l6 6 11-14"/>
+    <path d="M134 297l6 6 11-14"/>
+    <path d="M134 353l6 6 11-14"/>
+    <path d="M134 409l6 6 11-14"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="194" y="192" fill="#27241f" font-size="16" font-weight="700">Order facts</text>
+    <text x="194" y="216" fill="#666666" font-size="13">Amount, item, dispute reason, customer identifier</text>
+    <text x="194" y="248" fill="#27241f" font-size="16" font-weight="700">Delivery or fulfillment proof</text>
+    <text x="194" y="272" fill="#666666" font-size="13">Tracking, service completion, usage, or access logs</text>
+    <text x="194" y="304" fill="#27241f" font-size="16" font-weight="700">Customer communication</text>
+    <text x="194" y="328" fill="#666666" font-size="13">Support messages, replies, cancellation/refund request</text>
+    <text x="194" y="360" fill="#27241f" font-size="16" font-weight="700">Refund and policy status</text>
+    <text x="194" y="384" fill="#666666" font-size="13">Refund issued or denied, policy shown at checkout</text>
+    <text x="194" y="416" fill="#27241f" font-size="16" font-weight="700">Timeline and missing evidence</text>
+    <text x="194" y="440" fill="#666666" font-size="13">What happened, when, and what is still weak</text>
+  </g>
+  <rect x="462" y="78" width="142" height="40" rx="20" fill="#171717"/>
+  <text x="533" y="103" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">Pre-submit</text>
+  <rect x="462" y="458" width="142" height="22" rx="11" fill="#f4f4f4" stroke="#d4d4d4"/>
+</svg>

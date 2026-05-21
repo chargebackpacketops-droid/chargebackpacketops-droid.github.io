@@ -1,0 +1,27 @@
+<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Chargeback evidence packet preview</title>
+  <desc id="desc">A stylized document preview showing summary, evidence checklist, missing evidence, and response draft sections.</desc>
+  <rect width="720" height="560" rx="8" fill="#F5F6F0"/>
+  <rect x="46" y="38" width="628" height="484" rx="8" fill="#FFFFFF" stroke="#D9DED5"/>
+  <rect x="82" y="74" width="150" height="12" rx="3" fill="#214D42"/>
+  <rect x="82" y="104" width="360" height="20" rx="4" fill="#171A17"/>
+  <rect x="82" y="142" width="512" height="8" rx="4" fill="#D9DED5"/>
+  <rect x="82" y="160" width="448" height="8" rx="4" fill="#D9DED5"/>
+  <rect x="82" y="196" width="252" height="122" rx="8" fill="#EEF2EA" stroke="#D9DED5"/>
+  <rect x="106" y="222" width="90" height="10" rx="3" fill="#9A4B36"/>
+  <rect x="106" y="250" width="178" height="8" rx="4" fill="#5D665E"/>
+  <rect x="106" y="270" width="142" height="8" rx="4" fill="#5D665E"/>
+  <rect x="106" y="290" width="196" height="8" rx="4" fill="#5D665E"/>
+  <rect x="366" y="196" width="228" height="122" rx="8" fill="#FFFFFF" stroke="#D9DED5"/>
+  <circle cx="392" cy="230" r="7" fill="#2F6F5E"/>
+  <rect x="414" y="225" width="128" height="8" rx="4" fill="#5D665E"/>
+  <circle cx="392" cy="260" r="7" fill="#2F6F5E"/>
+  <rect x="414" y="255" width="94" height="8" rx="4" fill="#5D665E"/>
+  <circle cx="392" cy="290" r="7" fill="#B58A38"/>
+  <rect x="414" y="285" width="146" height="8" rx="4" fill="#5D665E"/>
+  <rect x="82" y="348" width="512" height="92" rx="8" fill="#FFF8F5" stroke="#E1B7AA"/>
+  <rect x="106" y="372" width="132" height="10" rx="3" fill="#9A4B36"/>
+  <rect x="106" y="400" width="420" height="8" rx="4" fill="#5D665E"/>
+  <rect x="106" y="420" width="326" height="8" rx="4" fill="#5D665E"/>
+  <rect x="82" y="468" width="180" height="16" rx="4" fill="#171A17"/>
+</svg>
