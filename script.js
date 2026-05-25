@@ -199,6 +199,67 @@
     return body;
   }
 
+  function buildReceiverMessage(formData) {
+    const selected = [
+      "platform",
+      "dispute_reason",
+      "order_value",
+      "submission_deadline",
+      "timeline",
+      "evidence_available",
+      "biggest_uncertainty",
+      "already_submitted",
+      "paid_packet_interest_optional",
+      "utm_source",
+      "utm_medium",
+      "utm_campaign",
+      "landing_variant"
+    ];
+
+    return selected
+      .map((name) => {
+        const value = String(formData.get(name) || "").trim();
+        return value ? `${name}: ${value}` : "";
+      })
+      .filter(Boolean)
+      .join("\n");
+  }
+
+  function buildFormSubmissionRequest(form) {
+    const endpoint = getFormEndpoint(form);
+    const formData = new FormData(form);
+
+    if (endpoint.includes("codefreeform.com")) {
+      const payload = Object.fromEntries(formData);
+      payload.name = payload.name || String(formData.get("email") || "RebutKit sample requester");
+      payload.message = payload.message || buildReceiverMessage(formData);
+
+      return {
+        endpoint,
+        init: {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        }
+      };
+    }
+
+    return {
+      endpoint,
+      init: {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: buildEncodedFormBody(form).toString()
+      }
+    };
+  }
+
   function buildFallbackMailto(form) {
     const formData = new FormData(form);
     const selected = [
@@ -293,14 +354,8 @@
       setSubmitting(form, true);
 
       try {
-        const response = await fetch(getFormEndpoint(form), {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/x-www-form-urlencoded"
-          },
-          body: buildEncodedFormBody(form).toString()
-        });
+        const request = buildFormSubmissionRequest(form);
+        const response = await fetch(request.endpoint, request.init);
 
         if (!(await confirmsReceipt(response))) {
           setFormError(form, "The online form did not confirm receipt.");
