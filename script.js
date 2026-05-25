@@ -6,6 +6,7 @@
   const posthogHost = posthogEnv.VITE_POSTHOG_HOST || metaHost || "https://us.i.posthog.com";
   const configuredFormEndpoint = (posthogEnv.VITE_FORM_ENDPOINT || "").trim();
   const configuredFormInbox = (posthogEnv.VITE_FORM_FALLBACK_EMAIL || "").trim();
+  const queuedAnalyticsEvents = [];
   let analyticsReady = false;
   let sampleStarted = false;
 
@@ -70,6 +71,7 @@
         disable_session_recording: true
       });
       analyticsReady = true;
+      flushQueuedAnalyticsEvents();
       if (window.location.pathname.endsWith("thanks.html") || window.location.pathname.endsWith("/thanks")) {
         track("sample_request_confirmed", getUtmParams());
       } else {
@@ -80,8 +82,72 @@
   }
 
   function track(eventName, properties) {
-    if (!analyticsReady || !window.posthog?.capture) return;
+    if (!analyticsReady || !window.posthog?.capture) {
+      queuedAnalyticsEvents.push([eventName, properties || {}]);
+      return;
+    }
     window.posthog.capture(eventName, properties || {});
+  }
+
+  function flushQueuedAnalyticsEvents() {
+    while (queuedAnalyticsEvents.length > 0) {
+      const [eventName, properties] = queuedAnalyticsEvents.shift();
+      if (window.posthog?.capture) {
+        window.posthog.capture(eventName, properties || {});
+      }
+    }
+  }
+
+  function getAnonymousDistinctId() {
+    const storageKey = "rebutkit_analytics_id";
+    try {
+      const existing = window.localStorage?.getItem(storageKey);
+      if (existing) return existing;
+
+      const generated =
+        window.crypto?.randomUUID?.() ||
+        `anon_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      window.localStorage?.setItem(storageKey, generated);
+      return generated;
+    } catch (_error) {
+      return `anon_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+    }
+  }
+
+  function directCapturePayload(eventName, properties) {
+    return {
+      api_key: posthogKey,
+      event: eventName,
+      distinct_id: getAnonymousDistinctId(),
+      properties: {
+        ...(properties || {}),
+        $current_url: window.location.href,
+        $host: window.location.host,
+        $pathname: window.location.pathname,
+        $process_person_profile: false
+      }
+    };
+  }
+
+  function sendCriticalAnalyticsEvent(eventName, properties) {
+    if (!posthogKey) return false;
+
+    const endpoint = `${posthogHost.replace(/\/$/, "")}/i/v0/e/`;
+    const body = JSON.stringify(directCapturePayload(eventName, properties));
+
+    if (navigator.sendBeacon) {
+      const sent = navigator.sendBeacon(endpoint, new Blob([body], { type: "application/json" }));
+      if (sent) return true;
+    }
+
+    fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body,
+      keepalive: true,
+      mode: "cors"
+    }).catch(() => {});
+    return true;
   }
 
   function markSampleStarted(form) {
@@ -224,7 +290,7 @@
         return;
       }
       event.preventDefault();
-      track("sample_request_submitted", allowedFormProperties(form));
+      sendCriticalAnalyticsEvent("sample_request_submitted", allowedFormProperties(form));
       setSubmitting(form, true);
 
       try {
