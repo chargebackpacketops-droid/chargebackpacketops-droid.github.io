@@ -290,7 +290,6 @@
         return;
       }
       event.preventDefault();
-      sendCriticalAnalyticsEvent("sample_request_submitted", allowedFormProperties(form));
       setSubmitting(form, true);
 
       try {
@@ -314,6 +313,7 @@
         return;
       }
 
+      sendCriticalAnalyticsEvent("sample_request_submitted", allowedFormProperties(form));
       window.location.href = "/thanks.html";
     });
 
